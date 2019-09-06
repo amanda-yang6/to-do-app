@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  justify-content: center;
+  text-align: center;
+}
+
+.mdl-grid.center-items {
+  justify-content: center;
+}
