@@ -17,10 +17,6 @@ function onReady(){
 
     //create delete button
     let deleteBtn = document.createElement('button');
-    
-    deleteBtn.addEventListener('click', function(event){
-      toDoList.removeChild(this.parentElement);
-    })
 
     //set the input's type to checkbox
     checkbox.type = "checkbox";
@@ -36,6 +32,16 @@ function onReady(){
 
     //attach the delete button to the li
     newLi.appendChild(deleteBtn);
+
+    deleteBtn.addEventListener('click', function(event){
+      toDoList.removeChild(this.parentElement);
+    })
+
+    //style the delete button
+    deleteBtn.className= 'mdl-button mdl-js-button mdl-button--raised mdl-button--accent';
+
+    //style the list items
+    newLi.className= 'mdl-list__item';
 
     //attach the li to the ul
     toDoList.appendChild(newLi);

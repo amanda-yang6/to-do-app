@@ -1,13 +1,16 @@
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 header {
-  justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
-.mdl-grid.center-items {
-  justify-content: center;
+main {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button.mdl-button {
+  margin-left: 30px;
 }
